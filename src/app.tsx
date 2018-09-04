@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 
 import { Button, AlternateButton } from './app.style.ts';
@@ -6,30 +6,30 @@ import { Button, AlternateButton } from './app.style.ts';
 @inject('store')
 @observer
 export default class App extends Component {
-  increment(store) {
-    store.increment();
+  increment() {
+    this.props.store.increment();
   }
 
-  decrement(store) {
-    store.decrement();
+  decrement() {
+    this.props.store.decrement();
   }
 
-  render({ store }) {
+  render() {
     return (
       <div>
         <h1>Here's a text element.</h1>
         <Button
           color="steelblue"
           onClick={() => {
-            this.increment(store);
+            this.increment();
           }}>
-          1 + {store.testValue} =
+          1 + {this.props.store.testValue} =
         </Button>
         <AlternateButton
           onClick={() => {
-            this.decrement(store);
+            this.decrement();
           }}>
-          {store.sum(1)}
+          {this.props.store.sum(1)}
         </AlternateButton>
       </div>
     );
