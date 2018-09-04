@@ -4687,9 +4687,9 @@ mobx-utils@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/mobx-utils/-/mobx-utils-5.0.0.tgz#384e805064c237b9a9446788a9e68278a3437610"
 
-mobx@4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-4.3.1.tgz#334e5aab4916b1d43f0faf3605a64b1b4b3ccb8d"
+mobx@4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-4.4.0.tgz#7fd1b7879cac642988acc0e6e2351e93e3970d12"
 
 move-concurrently@^1.0.1:
   version "1.0.1"
