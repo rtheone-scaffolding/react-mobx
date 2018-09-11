@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 
-import { Button, AlternateButton } from './app.style.ts';
+import { Button, AlternateButton } from './app.style';
 
 @inject('store')
 @observer
